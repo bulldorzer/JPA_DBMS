@@ -24,7 +24,7 @@ public class Order {
     @JoinColumn(name="delivery_id") //  주인설정 (FK)
     private Delivery delivery;
 
-    @Enumerated(EnumType.STRING)
+    @Enumerated(EnumType.STRING) // enum의 자료형 지정
     private OrderStatus status; //[ORDER, CANCEL]
 
 
