@@ -21,7 +21,7 @@ public class Order {
     private Member member;
 
     @OneToOne
-    @JoinColumn(name="delivery_id") // 양방향통신시에 주인설정 (FK)
+    @JoinColumn(name="delivery_id") //  주인설정 (FK)
     private Delivery delivery;
 
     @Enumerated(EnumType.STRING)
